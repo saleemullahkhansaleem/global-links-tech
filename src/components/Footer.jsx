@@ -4,6 +4,7 @@ import { BackToTopButton } from ".";
 import { LogoMHS } from "./Header";
 import { menu, servicesData } from "@/data";
 import { MoveRight } from "lucide-react";
+import { SocialBar } from "./landingpage/HeroSection";
 
 const contactInfo = [
   {
@@ -17,13 +18,7 @@ const contactInfo = [
 
 export default function Footer() {
   return (
-    <footer className="w-full transition-colors duration-300 relative text-background dark:text-foreground md:mt-8">
-      <div className="absolute inset-0 bg-accent-foreground dark:bg-accent -z-10"></div>
-      <img
-        src="/images/footer-bg.jpg"
-        alt="banner image"
-        className="w-full h-full object-cover absolute inset-0 opacity-20 -z-10"
-      />
+    <footer className="w-full transition-colors duration-300 relative bg-primary/10 border-t border-primary">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 py-12 md:py-16 px-4 md:px-6">
         <div>
           <div className="mb-4">
@@ -111,7 +106,10 @@ export default function Footer() {
           </div>
 
           {/* Social Links */}
-          <div className="mt-6">
+          <div className="mt-8">
+            <SocialBar />
+          </div>
+          {/* <div className="mt-6">
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               {menu.social.map(({ name, path, icon: Icon }) => (
@@ -127,29 +125,31 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Footer Bottom */}
-      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center p-4">
-        <p className="text-sm">
-          © 2024 Global Links Technologies. All rights reserved.
-        </p>
-        <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
-          {[
-            { name: "Terms of Service", link: "/terms-of-services" },
-            { name: "Privacy Policy", link: "/privacy-policy" },
-          ].map((item) => (
-            <Link
-              key={item.name}
-              className="text-sm hover:text-primary transition-colors"
-              to={item.link}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </nav>
+      <div className="bg-primary/20">
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center p-4">
+          <p className="text-sm">
+            © 2024 Global Links Technologies. All rights reserved.
+          </p>
+          <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
+            {[
+              { name: "Terms of Service", link: "/terms-of-services" },
+              { name: "Privacy Policy", link: "/privacy-policy" },
+            ].map((item) => (
+              <Link
+                key={item.name}
+                className="text-sm hover:text-primary transition-colors"
+                to={item.link}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </div>
       <BackToTopButton />
     </footer>

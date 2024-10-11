@@ -1,90 +1,86 @@
 import { motion, useInView } from "framer-motion";
-import { Heading } from "..";
-import { Button } from "../ui/button";
-import { Link } from "react-router-dom";
+import { SectionContainer } from "..";
 import { useRef } from "react";
+
+import {
+  FaGlobe,
+  FaLightbulb,
+  FaDollarSign,
+  FaHandshake,
+  FaClock,
+  FaTrophy,
+} from "react-icons/fa";
 
 const whyChooseUs = [
   {
     title: "Global Expertise",
     description:
       "With a global reach, we bring international expertise while understanding local challenges, ensuring our solutions meet the highest global standards.",
+    icon: FaGlobe,
   },
   {
     title: "Innovative Solutions",
     description:
       "We leverage the latest technology to provide cutting-edge software solutions, tailored specifically to your business needs and objectives.",
+    icon: FaLightbulb,
   },
   {
     title: "Cost-Effective Services",
     description:
       "Our pricing model is designed to deliver top-notch solutions at competitive rates, ensuring the best value for your investment.",
+    icon: FaDollarSign,
   },
   {
     title: "Client-Driven Approach",
     description:
       "We prioritize collaboration and transparency, ensuring our solutions align with your vision through every step of the process.",
+    icon: FaHandshake,
+  },
+  {
+    title: "24/7 Availability",
+    description:
+      "Our team is available around the clock to provide continuous support and ensure smooth operations for your business.",
+    icon: FaClock,
+  },
+  {
+    title: "Proven Track Record",
+    description:
+      "Our portfolio showcases successful projects across multiple industries, demonstrating our ability to consistently deliver results.",
+    icon: FaTrophy,
   },
 ];
 
 export default function WhyChooseUs() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
   return (
-    <section className="w-full py-8 md:py-12 px-4 md:px-6 bg-secondary/10 transition-colors duration-300">
-      <div className="container mx-auto">
-        <div className="grid gap-10 lg:grid-cols-2 items-center">
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, x: -150 }}
-            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -150 }}
-            transition={{ duration: 0.5 }}
-            className="space-y-6 order-2"
-          >
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Why <Heading>Global Links Technologies</Heading>?
-            </h2>
-            <ul className="grid gap-8 space-y-2 pt-4">
-              {whyChooseUs.map((item, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -50 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex flex-col sm:flex-row items-start gap-4 text-lg group"
-                >
-                  <div className="transition-colors group-hover:scale-110 text-5xl font-bold text-primary">
-                    {"0" + (index + 1) + "."}
-                  </div>
-                  <div>
-                    <h3 className="text-2xl">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.description}</p>
-                  </div>
-                </motion.li>
-              ))}
-            </ul>
-            <div className="pt-4">
-              <Button size="lg" variant="" asChild>
-                <Link to="/contact-us">Get in touch</Link>
-              </Button>
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 150 }}
-            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 150 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center justify-center gap-12 lg:justify-start"
-          >
-            <div className="relative w-full max-w-xl aspect-square">
-              <img
-                src="/images/2.png"
-                alt="Global Links Technologies"
-                className="w-full"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
+        <SectionContainer
+          id="why-section"
+          title="Our"
+          titleColor="Strengths"
+          description="At Global Links Technologies, we combine global expertise with local insight to deliver innovative, cost-effective solutions that are tailored to our clients’ specific needs. Here are some reasons why clients choose Global Links Technologies."
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
+          {whyChooseUs.map((item, index) => (
+            <motion.div
+              ref={ref}
+              key={index}
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -50 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="flex flex-col items-start gap-6 text-lg p-4 relative overflow-hidden bg-primary/5 group"
+            >
+              <item.icon className="absolute -right-8 -top-8 h-2/3 w-auto text-primary/10" />
+              <div className="transition-colors group-hover:scale-110 text-5xl font-bold text-primary p-4 bg-primary/5">
+                {"0" + (index + 1)}
+              </div>
+              <div>
+                <h3 className="text-2xl mb-2">{item.title}</h3>
+                <p className="text-muted-foreground">{item.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </SectionContainer>
   );
 }

@@ -16,8 +16,9 @@ export default function ServiceCard({
       initial={{ opacity: 0, y: 150 }}
       animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 150 }}
       transition={{ duration: 0.5, delay: index * 0.05 }}
-      className="flex flex-col justify-between p-8 border-l-4 border-primary hover:text-white bg-primary/5 overflow-hidden relative group"
+      className="flex flex-col justify-between p-8 border-l-4 border-primary hover:text-white bg-primary/5 overflow-hidden relative rounded-r-xl group"
     >
+      <service.icon className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
       <div>
         <div className="mb-6 p-4 bg-primary/10 transition-all duration-300 group-hover:bg-background/20 w-max">
           <service.icon className="h-10 w-10 text-primary group-hover:text-white" />

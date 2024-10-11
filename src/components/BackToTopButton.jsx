@@ -35,7 +35,7 @@ export default function BackToTopButton() {
           varient="ghost"
           size="icon"
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 z-50 shadow-lg hover:shadow-xl transition-all duration-300"
+          className="fixed bottom-2 right-2 z-50 shadow-lg hover:shadow-xl transition-all duration-300"
         >
           <FaArrowUp className="" />
         </Button>

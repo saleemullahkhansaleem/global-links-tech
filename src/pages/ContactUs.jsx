@@ -40,15 +40,15 @@ export default function ContactUs() {
           feel free to reach out to us.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="flex flex-col items-center p-6 border border-primary/20 bg-primary/10 hover:bg-primary/20 transition duration-300">
+          <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300">
             <h3 className="text-xl font-semibold mb-2">Email</h3>
             <p className="text-muted-foreground">info@mhstechventures.com</p>
           </div>
-          <div className="flex flex-col items-center p-6 border border-primary/20 bg-primary/10 hover:bg-primary/20 transition duration-300">
+          <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300">
             <h3 className="text-xl font-semibold mb-2">Phone</h3>
             <p className="text-muted-foreground">+123 456 7890</p>
           </div>
-          <div className="flex flex-col items-center p-6 border border-primary/20 bg-primary/10 hover:bg-primary/20 transition duration-300">
+          <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300">
             <h3 className="text-xl font-semibold mb-2">Address</h3>
             <p className="text-muted-foreground">
               123 Tech Avenue, Islamabad, Pakistan
@@ -73,7 +73,7 @@ export default function ContactUs() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-primary/10 border border-primary/20 focus:outline-none text-foreground"
+                className="w-full px-4 py-3 bg-primary/5 border-b border-primary focus:outline-none text-foreground"
                 placeholder="Enter your name"
               />
               <input
@@ -83,7 +83,7 @@ export default function ContactUs() {
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-primary/10 border border-primary/20 focus:outline-none text-foreground"
+                className="w-full px-4 py-3 bg-primary/5 border-b border-primary focus:outline-none text-foreground"
                 placeholder="Enter your phone number"
               />
             </div>
@@ -95,7 +95,7 @@ export default function ContactUs() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-primary/10 border border-primary/20 focus:outline-none text-foreground"
+                className="w-full px-4 py-3 bg-primary/5 border-b border-primary focus:outline-none text-foreground"
                 placeholder="Enter your email"
               />
             </div>
@@ -107,7 +107,7 @@ export default function ContactUs() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-primary/10 border border-primary/20 focus:outline-none text-foreground"
+                className="w-full px-4 py-3 bg-primary/5 border-b border-primary focus:outline-none text-foreground"
                 placeholder="Enter subject"
               />
             </div>
@@ -119,7 +119,7 @@ export default function ContactUs() {
                 onChange={handleChange}
                 required
                 rows="5"
-                className="w-full px-4 py-3 bg-primary/10 border border-primary/20 focus:outline-none text-foreground resize-none"
+                className="w-full px-4 py-3 bg-primary/5 border-b border-primary focus:outline-none text-foreground resize-none"
                 placeholder="Type your message"
               ></textarea>
             </div>

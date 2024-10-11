@@ -31,52 +31,55 @@ function TeamBox({ member, index }) {
       initial={{ opacity: 0, y: 150 }}
       animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 150 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group relative overflow-hidden max-w-72 mx-auto"
+      className="group relative overflow-hidden mx-auto bg-primary/10"
     >
-      <img
-        src={member.image}
-        alt={member.name}
-        className="w-full aspect-[3/4] object-cover object-center"
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-90 transition-opacity duration-300"></div>
-      <div className="absolute inset-x-0 bottom-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <h3 className="text-white text-2xl font-bold">{member.name}</h3>
-        <p className="text-primary text-lg mb-4">{member.position}</p>
-        <div className="flex space-x-4">
-          {member.linkedin && (
-            <Link
-              to={member.linkedin}
-              title="LinkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-primary"
-            >
-              <FaLinkedinIn size={20} />
-            </Link>
-          )}
-          {member.twitter && (
-            <Link
-              to={member.twitter}
-              title="Twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-primary"
-            >
-              <FaTwitter size={20} />
-            </Link>
-          )}
-          {member.github && (
-            <Link
-              to={member.github}
-              title="Github"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-primary"
-            >
-              <FaGithub size={20} />
-            </Link>
-          )}
+      <div className="relative border-t-4 border-primary">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-full aspect-[3/4] object-cover object-center"
+        />
+        <div className="absolute inset-0 max-h-0 group-hover:max-h-[600px] bg-gradient-to-b from-primary/80 to-primary/20 transition-all duration-700 ease-in-out overflow-hidden flex items-center justify-center">
+          <div className="flex space-x-4 z-10 text-white">
+            {member.linkedin && (
+              <Link
+                to={member.linkedin}
+                title="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary bg-black/50 p-2"
+              >
+                <FaLinkedinIn size={28} />
+              </Link>
+            )}
+            {member.twitter && (
+              <Link
+                to={member.twitter}
+                title="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary bg-black/50 p-2"
+              >
+                <FaTwitter size={28} />
+              </Link>
+            )}
+            {member.github && (
+              <Link
+                to={member.github}
+                title="Github"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary bg-black/50 p-2"
+              >
+                <FaGithub size={28} />
+              </Link>
+            )}
+          </div>
         </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-2xl font-bold">{member.name}</h3>
+        <p className="text-primary text-lg">{member.position}</p>
       </div>
     </motion.div>
   );

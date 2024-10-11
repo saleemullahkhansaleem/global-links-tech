@@ -1,37 +1,43 @@
-import { Code, Globe, Server, ShoppingBag, Smartphone } from "lucide-react";
-import { FaPuzzlePiece } from "react-icons/fa";
+import {
+  FaGlobe,
+  FaMobileAlt,
+  FaServer,
+  FaCode,
+  FaShoppingBag,
+  FaPuzzlePiece,
+} from "react-icons/fa";
 
 export const servicesData = [
   {
-    icon: Globe,
+    icon: FaGlobe,
     title: "Innovative Web Development",
     description:
       "Crafting cutting-edge, responsive websites that not only captivate users but also drive business growth with robust performance.",
     url: "/services/web-development",
   },
   {
-    icon: Smartphone,
+    icon: FaMobileAlt,
     title: "Mobile App Development",
     description:
       "Developing high-performance mobile applications for iOS and Android, focused on enhancing user experience and engagement.",
     url: "/services/mobile-app-development",
   },
   {
-    icon: Server,
+    icon: FaServer,
     title: "Advanced Portal Management Systems",
     description:
       "Building secure and scalable portal management solutions that optimize your operational efficiency and data handling.",
     url: "/services/portal-management-systems",
   },
   {
-    icon: Code,
+    icon: FaCode,
     title: "Expert Software Consultancy",
     description:
       "Providing strategic technology consultancy to guide your digital transformation and optimize your business processes.",
     url: "/services/software-consultancy",
   },
   {
-    icon: ShoppingBag,
+    icon: FaShoppingBag,
     title: "Custom E-commerce Solutions",
     description:
       "Delivering tailored e-commerce platforms with seamless payment integrations to empower your online business success.",
