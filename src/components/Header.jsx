@@ -103,12 +103,12 @@ export function LogoMHS({ lg = false }) {
       <img
         src="/images/logos/logo.png"
         alt="Global Links Technologies Logo"
-        className={`h-8 ${lg ? "xl:h-16" : ""}`}
+        className={`h-8 ${lg ? "xl:h-14" : "xl:h-12"}`}
       />
       <div className="hidden lg:block">
         <h1
           className={`ml-2 ${
-            lg ? "xl:text-2xl" : "xl:text-xl"
+            lg ? "xl:text-xl" : "xl:text-lg"
           } font-semibold text-primary uppercase text-lg`}
         >
           Global Links Technologies

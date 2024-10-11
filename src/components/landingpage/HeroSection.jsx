@@ -13,7 +13,7 @@ export default function HeroSection() {
         className="w-full h-full object-cover absolute inset-0 opacity-100 "
       /> */}
       {/* <div className="dotted-bg absolute inset-0 opacity-70"></div> */}
-      <div className="container mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="container mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-8">
         <img
           src="/images/hero-img.webp"
           alt="hero image"
