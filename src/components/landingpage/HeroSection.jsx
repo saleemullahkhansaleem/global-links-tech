@@ -7,6 +7,9 @@ import { Heading } from "..";
 export default function HeroSection() {
   return (
     <section className="relative w-full flex items-center overflow-hidden min-h-screen pt-20 bg-primary/5">
+      <h1 className="absolute top-1/2 right-0 h-2/3 w-auto text-9xl text-left font-extrabold uppercase text-primary/10 text-nowrap">
+        Global <br /> Links <br /> <span className="">Technologies</span>
+      </h1>
       {/* <img
         src="/images/banner.png"
         alt="Global Links Technologies banner"

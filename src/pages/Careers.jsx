@@ -7,7 +7,7 @@ export default function Careers() {
   return (
     <div className="bg-background text-foreground">
       <DetailsHeroSection
-        title="Careers at Global Links Technologies"
+        title="Careers"
         description="Join our team and help us shape the future of technology."
       />
 
@@ -102,7 +102,7 @@ function WhyJoinUs() {
   return (
     <section className="container mx-auto px-4 py-12 text-center">
       <h2 className="text-4xl font-bold mb-6">
-        Why <Heading>Work</Heading> With Us?
+        Why Work With <Heading>Global Links Technologies?</Heading>
       </h2>
       <p className="mb-12 text-muted-foreground max-w-3xl mx-auto">
         At Global Links Technologies, we foster innovation, creativity, and
