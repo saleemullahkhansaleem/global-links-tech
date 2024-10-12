@@ -12,41 +12,7 @@ export default function Careers() {
       />
 
       {/* Why Work With Us */}
-      <section className="container mx-auto px-4 py-12 text-center">
-        <h2 className="text-4xl font-bold mb-6">
-          Why <Heading>Work</Heading> With Us?
-        </h2>
-        <p className="mb-12 text-muted-foreground max-w-3xl mx-auto">
-          At Global Links Technologies, we foster innovation, creativity, and
-          collaboration. We are committed to building a diverse, inclusive
-          workplace where you can thrive and make a difference.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-8 border border-primary/20 bg-primary/10 hover:bg-primary/20 transition">
-            <h3 className="text-2xl font-bold mb-4">Growth Opportunities</h3>
-            <p className="text-muted-foreground">
-              We offer a path for continuous learning, development, and career
-              growth in the ever-evolving tech industry.
-            </p>
-          </div>
-          <div className="p-8 border border-primary/20 bg-primary/10 hover:bg-primary/20 transition">
-            <h3 className="text-2xl font-bold mb-4">Innovative Culture</h3>
-            <p className="text-muted-foreground">
-              Work in an environment that encourages creativity and
-              out-of-the-box thinking. We embrace innovative ideas to drive
-              success.
-            </p>
-          </div>
-          <div className="p-8 border border-primary/20 bg-primary/10 hover:bg-primary/20 transition">
-            <h3 className="text-2xl font-bold mb-4">Work-Life Balance</h3>
-            <p className="text-muted-foreground">
-              We prioritize work-life balance, ensuring you stay motivated and
-              healthy while excelling in your career.
-            </p>
-          </div>
-        </div>
-      </section>
+      <WhyJoinUs />
 
       {/* Job Openings */}
       <section className="bg-primary/5 py-12">
@@ -56,7 +22,10 @@ export default function Careers() {
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Job Opening 1 */}
-            <div className="p-8 border border-primary/20 bg-primary/10 hover:bg-primary/20 transition">
+            <div className="p-8 border-l-4 border-primary rounded-r-lg bg-primary/5 hover:bg-primary/10 transition relative overflow-hidden">
+              <div className="absolute -right-4 -top-4 h-2/3 w-auto text-9xl text-right font-extrabold uppercase text-primary/10">
+                React
+              </div>
               <h3 className="text-2xl font-bold mb-2">
                 Senior React Developer
               </h3>
@@ -79,7 +48,10 @@ export default function Careers() {
             </div>
 
             {/* Job Opening 2 */}
-            <div className="p-8 border border-primary/20 bg-primary/10 hover:bg-primary/20 transition">
+            <div className="p-8 border-l-4 border-primary rounded-r-lg bg-primary/5 hover:bg-primary/10 transition relative overflow-hidden">
+              <div className="absolute -right-4 -top-4 h-2/3 w-auto text-9xl text-right font-extrabold uppercase text-primary/10">
+                UI/UX
+              </div>
               <h3 className="text-2xl font-bold mb-2">UI/UX Designer</h3>
               <p className="text-muted-foreground mb-4">Remote</p>
               <ul className="space-y-2 mb-6">
@@ -121,5 +93,63 @@ export default function Careers() {
         </div>
       </section>
     </div>
+  );
+}
+
+import { FaChartLine, FaLightbulb, FaBalanceScale } from "react-icons/fa";
+
+function WhyJoinUs() {
+  return (
+    <section className="container mx-auto px-4 py-12 text-center">
+      <h2 className="text-4xl font-bold mb-6">
+        Why <Heading>Work</Heading> With Us?
+      </h2>
+      <p className="mb-12 text-muted-foreground max-w-3xl mx-auto">
+        At Global Links Technologies, we foster innovation, creativity, and
+        collaboration. We are committed to building a diverse, inclusive
+        workplace where you can thrive and make a difference.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Growth Opportunities */}
+        <div className="flex flex-col items-center p-8 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300 relative overflow-hidden group">
+          <FaChartLine className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
+          <div className="flex items-center justify-center mb-4 w-16 h-16 bg-primary/20">
+            <FaChartLine className="text-primary mb-2" size={32} />
+          </div>
+          <h3 className="text-2xl font-bold mb-4">Growth Opportunities</h3>
+          <p className="text-muted-foreground">
+            We offer a path for continuous learning, development, and career
+            growth in the ever-evolving tech industry.
+          </p>
+        </div>
+
+        {/* Innovative Culture */}
+        <div className="flex flex-col items-center p-8 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300 relative overflow-hidden group">
+          <FaLightbulb className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
+          <div className="flex items-center justify-center mb-4 w-16 h-16 bg-primary/20">
+            <FaLightbulb className="text-primary mb-2" size={32} />
+          </div>
+          <h3 className="text-2xl font-bold mb-4">Innovative Culture</h3>
+          <p className="text-muted-foreground">
+            Work in an environment that encourages creativity and out-of-the-box
+            thinking. We embrace innovative ideas to drive success.
+          </p>
+        </div>
+
+        {/* Work-Life Balance */}
+        <div className="flex flex-col items-center p-8 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300 relative overflow-hidden group">
+          <FaBalanceScale className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
+          <div className="flex items-center justify-center mb-4 w-16 h-16 bg-primary/20">
+            <FaBalanceScale className="text-primary mb-2" size={32} />
+          </div>
+          <h3 className="text-2xl font-bold mb-4">Work-Life Balance</h3>
+          <p className="text-muted-foreground">
+            We prioritize work-life balance, ensuring you stay motivated and
+            healthy while excelling in your career.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }

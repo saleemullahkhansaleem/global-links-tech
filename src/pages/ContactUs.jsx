@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { DetailsHeroSection, Heading } from "@/components";
-import { Link } from "react-router-dom";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -30,32 +30,7 @@ export default function ContactUs() {
         description="We're here to help you achieve your business goals."
       />
 
-      {/* Contact Information */}
-      <section className="container mx-auto px-4 py-12 text-center">
-        <h2 className="text-3xl font-bold mb-4">
-          <Heading> Get in Touch</Heading>
-        </h2>
-        <p className="mb-8 text-muted-foreground">
-          Whether you have a question, feedback, or want to discuss a project,
-          feel free to reach out to us.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300">
-            <h3 className="text-xl font-semibold mb-2">Email</h3>
-            <p className="text-muted-foreground">info@mhstechventures.com</p>
-          </div>
-          <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300">
-            <h3 className="text-xl font-semibold mb-2">Phone</h3>
-            <p className="text-muted-foreground">+123 456 7890</p>
-          </div>
-          <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300">
-            <h3 className="text-xl font-semibold mb-2">Address</h3>
-            <p className="text-muted-foreground">
-              123 Tech Avenue, Islamabad, Pakistan
-            </p>
-          </div>
-        </div>
-      </section>
+      <ContactInfo />
 
       {/* Contact Form and Map Section */}
       <section className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -158,5 +133,50 @@ export default function ContactUs() {
         </div>
       </section>
     </div>
+  );
+}
+
+function ContactInfo() {
+  return (
+    <section className="container mx-auto px-4 py-12 text-center">
+      <h2 className="text-3xl font-bold mb-4">
+        <Heading> Get in Touch</Heading>
+      </h2>
+      <p className="mb-8 text-muted-foreground">
+        Whether you have a question, feedback, or want to discuss a project,
+        feel free to reach out to us.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300 relative overflow-hidden group">
+          <FaEnvelope className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
+          <div className="flex items-center justify-center mb-4 w-16 h-16 bg-primary/20">
+            <FaEnvelope className="text-primary mb-2" size={32} />{" "}
+          </div>
+          {/* Email Icon */}
+          <h3 className="text-xl font-semibold mb-2">Email</h3>
+          <p className="text-muted-foreground">info@mhstechventures.com</p>
+        </div>
+        <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300 relative overflow-hidden group">
+          <FaPhoneAlt className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
+          <div className="flex items-center justify-center mb-4 w-16 h-16 bg-primary/20">
+            <FaPhoneAlt className="text-primary mb-2" size={32} />{" "}
+          </div>
+          {/* Phone Icon */}
+          <h3 className="text-xl font-semibold mb-2">Phone</h3>
+          <p className="text-muted-foreground">+123 456 7890</p>
+        </div>
+        <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300 relative overflow-hidden group">
+          <FaMapMarkerAlt className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
+          <div className="flex items-center justify-center mb-4 w-16 h-16 bg-primary/20">
+            <FaMapMarkerAlt className="text-primary mb-2" size={32} />{" "}
+          </div>
+          {/* Address Icon */}
+          <h3 className="text-xl font-semibold mb-2">Address</h3>
+          <p className="text-muted-foreground">
+            123 Tech Avenue, Islamabad, Pakistan
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
