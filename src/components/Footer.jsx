@@ -9,11 +9,14 @@ import { SocialBar } from "./landingpage/HeroSection";
 const contactInfo = [
   {
     icon: FaEnvelope,
-    text: "info@mhstechventures.com",
-    path: "mailto:info@mhstechventures.com",
+    text: "globallinkstechnologies2@gmail.com",
+    path: "mailto:globallinkstechnologies2@gmail.com",
   },
-  { icon: FaPhone, text: "+123 456 7890", path: "tel:+1234567890" },
-  { icon: FaMapMarkerAlt, text: "123 Tech Avenue, Islamabad, Pakistan" },
+  { icon: FaPhone, text: "+9251 8739 888", path: "tel:+92518739888" },
+  {
+    icon: FaMapMarkerAlt,
+    text: "Third Floor, Al-Malik Centre, 70-West, Jinnah Avenue, Blue Area, Islamabad.",
+  },
 ];
 
 export default function Footer() {

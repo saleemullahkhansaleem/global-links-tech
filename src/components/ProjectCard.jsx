@@ -10,8 +10,8 @@ export default function ProjectCard({
     title: "",
     description: "",
     image: "/images/placeholder.webp",
-    liveUrl: "#",
-    codeUrl: "#",
+    liveUrl: "",
+    codeUrl: "",
   },
   index = 0,
 }) {
@@ -41,7 +41,7 @@ export default function ProjectCard({
         />
         <div className="absolute inset-0 opacity-0 transition-all duration-300 bg-primary/50 group-hover:opacity-100 flex items-center justify-center gap-4">
           <Link
-            to={project.CodeUrl}
+            to={project.codeUrl}
             title="Code"
             className="flex items-center justify-center gap-2 bg-black/40 p-3 hover:bg-black/50 text-white  hover:text-primary"
           >
@@ -49,7 +49,7 @@ export default function ProjectCard({
           </Link>
 
           <Link
-            to={project.LiveUrl}
+            to={project.liveUrl}
             title="live"
             className="flex items-center justify-center gap-2 bg-black/40 p-3 hover:bg-black/50 text-white  hover:text-primary"
           >

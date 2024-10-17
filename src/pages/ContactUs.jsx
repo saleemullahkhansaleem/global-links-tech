@@ -107,7 +107,7 @@ export default function ContactUs() {
         {/* Map Section */}
         <div className="flex justify-center items-center">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.918096719671!2d72.87312821531578!3d33.68429578067724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df91915b135a5f%3A0x8003f9e9791e4ae0!2sMHS%20Tech%20Ventures!5e0!3m2!1sen!2s!4v1634271953722!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d829.7134294650209!2d73.0618233696377!3d33.71273391390278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfa2b4a3278d%3A0x34a59e63033052c2!2sAl-Malik%20Centre!5e0!3m2!1sen!2s!4v1729151538700!5m2!1sen!2s"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -154,7 +154,9 @@ function ContactInfo() {
           </div>
           {/* Email Icon */}
           <h3 className="text-xl font-semibold mb-2">Email</h3>
-          <p className="text-muted-foreground">info@mhstechventures.com</p>
+          <p className="text-muted-foreground">
+            globallinkstechnologies2@gmail.com
+          </p>
         </div>
         <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300 relative overflow-hidden group">
           <FaPhoneAlt className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
@@ -163,7 +165,7 @@ function ContactInfo() {
           </div>
           {/* Phone Icon */}
           <h3 className="text-xl font-semibold mb-2">Phone</h3>
-          <p className="text-muted-foreground">+123 456 7890</p>
+          <p className="text-muted-foreground">+9251 8739 888</p>
         </div>
         <div className="flex flex-col items-center p-6 border-t-4 border-primary rounded-b-lg bg-primary/5 hover:bg-primary/10 transition duration-300 relative overflow-hidden group">
           <FaMapMarkerAlt className="absolute -right-4 -top-4 h-2/3 w-auto text-primary/10" />
@@ -173,7 +175,8 @@ function ContactInfo() {
           {/* Address Icon */}
           <h3 className="text-xl font-semibold mb-2">Address</h3>
           <p className="text-muted-foreground">
-            123 Tech Avenue, Islamabad, Pakistan
+            Third Floor, Al-Malik Centre, 70-West, Jinnah Avenue, Blue Area,
+            Islamabad.
           </p>
         </div>
       </div>
