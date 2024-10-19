@@ -136,7 +136,15 @@ export default function Footer() {
       <div className="bg-primary/20">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center p-4">
           <p className="text-sm">
-            © 2024 Global Links Technologies. All rights reserved.
+            Developed by{" "}
+            <Link
+              target="_blank"
+              className="text-primary hover:underline"
+              to={"https://mhstv.vercel.app/"}
+            >
+              MHS Tech Ventures
+            </Link>{" "}
+            | © 2024 Global Links Technologies. All rights reserved.
           </p>
           <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
             {[
