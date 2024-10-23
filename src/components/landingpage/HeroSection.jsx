@@ -69,7 +69,7 @@ export function SocialBar() {
       {menu.social.map((link, index) => (
         <Link
           key={index}
-          to={link.url}
+          to={link.path}
           title={link.name}
           className="group/social-link hover:text-primary transition p-3 bg-primary/10 hover:bg-primary/20 border-l-2 border-primary rounded-r"
           target="_blank"

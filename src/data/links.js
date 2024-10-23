@@ -8,9 +8,9 @@ import {
 export const menu = {
   main: [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "Portfolio", path: "/portfolio" },
     { name: "About", path: "/about-us" },
+    { name: "Services", path: "/services" },
+    { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact-us" },
     { name: "Career", path: "/careers" },
   ],
@@ -28,7 +28,11 @@ export const menu = {
   ],
   social: [
     { name: "Facebook", path: "https://facebook.com", icon: FaFacebookF },
-    { name: "LinkedIn", path: "https://linkedin.com", icon: FaLinkedinIn },
+    {
+      name: "LinkedIn",
+      path: "https://www.linkedin.com/company/global-links-tech/",
+      icon: FaLinkedinIn,
+    },
     { name: "YouTube", path: "https://youtube.com", icon: FaYoutube },
     { name: "Instagram", path: "https://instagram.com", icon: FaInstagram },
   ],

@@ -1,5 +1,4 @@
 import { motion, useInView } from "framer-motion";
-import { Card, CardContent } from "../ui/card";
 import { FaQuoteLeft } from "react-icons/fa";
 import { SectionContainer } from "..";
 import { testimonialsData } from "@/data";

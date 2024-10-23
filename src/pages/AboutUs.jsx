@@ -3,8 +3,6 @@ import {
   DetailsHeroSection,
   Heading,
   SectionContainer,
-  TeamSection,
-  Testimonial,
 } from "@/components";
 import { Button } from "@/components/ui/button";
 import { FaCheckCircle } from "react-icons/fa";
@@ -101,9 +99,6 @@ export default function AboutUs() {
           className="absolute right-0 bottom-0 h-[150%] object-cover md:ml-auto grayscale opacity-15"
         />
       </SectionContainer>
-
-      {/* <TeamSection />
-      <Testimonial /> */}
 
       {/* Call to Action */}
       <section className="py-12">

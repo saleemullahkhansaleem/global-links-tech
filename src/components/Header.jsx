@@ -29,13 +29,6 @@ export default function Header({ setDarkMode, darkMode }) {
               </NavLink>
             ))}
           </nav>
-          {/* <Button
-            className="ml-4 hidden xl:inline-flex"
-            variant="outline"
-            asChild
-          >
-            <Link to="/contact-us">Get Started</Link>
-          </Button> */}
           <Button
             variant="ghost"
             size="icon"
@@ -86,9 +79,6 @@ export default function Header({ setDarkMode, darkMode }) {
                   {item.name}
                 </NavLink>
               ))}
-              {/* <Button variant="" asChild>
-                <Link to="/contact-us">Get Started</Link>
-              </Button> */}
             </nav>
           </motion.div>
         )}

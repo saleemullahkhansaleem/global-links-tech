@@ -4,8 +4,6 @@ import {
   DetailsHeroSection,
   Heading,
   ProjectCard,
-  TeamSection,
-  Testimonial,
 } from "@/components";
 import { projectsData } from "@/data";
 import { Link } from "react-router-dom";
@@ -34,9 +32,6 @@ export default function PortfolioPage() {
           ))}
         </div>
       </section>
-
-      <Testimonial />
-      <TeamSection />
 
       {/* Call to Action Section */}
       <section className="py-12">

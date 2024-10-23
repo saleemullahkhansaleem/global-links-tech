@@ -67,7 +67,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "portfolio",
+        path: "projects",
         element: <PortfolioPage />,
       },
       {

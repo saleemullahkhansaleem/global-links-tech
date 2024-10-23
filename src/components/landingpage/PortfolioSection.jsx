@@ -27,7 +27,7 @@ export default function PortfolioSection() {
           Technologies can support your growth.
         </p>
         <Button size="lg" variant="" className="mt-4" asChild>
-          <Link to="/portfolio">Explore More Projects</Link>
+          <Link to="/projects">Explore More Projects</Link>
         </Button>
       </div>
     </SectionContainer>

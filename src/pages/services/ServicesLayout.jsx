@@ -1,4 +1,4 @@
-import { Heading, PortfolioSection, Testimonial } from "@/components";
+import { Heading } from "@/components";
 import { Button } from "@/components/ui/button";
 import { Link, Outlet } from "react-router-dom";
 
@@ -6,10 +6,6 @@ export default function ServicesLayout() {
   return (
     <>
       <Outlet />
-
-      <PortfolioSection />
-
-      <Testimonial />
 
       {/* Call to Action Section */}
       <section className="py-12">
