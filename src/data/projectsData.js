@@ -23,28 +23,4 @@ export const projectsData = [
     liveUrl: "https://gltech.vercel.app/",
     codeUrl: "",
   },
-  // {
-  //   title: "Business Dashboard Suite",
-  //   description:
-  //     "A user-friendly dashboard application offering comprehensive insights into business performance metrics, streamlining decision-making processes.",
-  //   image: "/images/projects/4.webp",
-  //   liveUrl: "",
-  //   codeUrl: "",
-  // },
-  // {
-  //   title: "Healthcare Connect",
-  //   description:
-  //     "A telemedicine platform that connects patients with healthcare professionals through secure video consultations and medical record management.",
-  //   image: "/images/projects/5.webp",
-  //   liveUrl: "",
-  //   codeUrl: "",
-  // },
-  // {
-  //   title: "Smart Inventory System",
-  //   description:
-  //     "An intelligent inventory management solution that optimizes stock levels and enhances order fulfillment processes using real-time data.",
-  //   image: "/images/projects/6.webp",
-  //   liveUrl: "",
-  //   codeUrl: "",
-  // },
 ];
