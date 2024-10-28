@@ -4,6 +4,20 @@ import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Careers() {
+  const jobOpenings = [
+    {
+      id: 3,
+      title: "Accountant",
+      location: "Islamabad, Pakistan",
+      requirements: [
+        "Bachelor's degree in Accounting, Finance, or related field",
+        "2+ years of experience in accounting or finance",
+        "Proficiency in accounting software and MS Excel",
+      ],
+      label: "Accounting",
+    },
+  ];
+
   return (
     <div className="bg-background text-foreground">
       <DetailsHeroSection
@@ -21,57 +35,27 @@ export default function Careers() {
             Current <Heading>Job</Heading> Openings
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Job Opening 1 */}
-            <div className="p-8 border-l-4 border-primary rounded-r-lg bg-primary/5 hover:bg-primary/10 transition relative overflow-hidden">
-              <div className="absolute -right-4 -top-4 h-2/3 w-auto text-9xl text-right font-extrabold uppercase text-primary/10">
-                React
+            {jobOpenings.map((job) => (
+              <div
+                key={job.id}
+                className="p-8 border-l-4 border-primary rounded-r-lg bg-primary/5 hover:bg-primary/10 transition relative overflow-hidden"
+              >
+                <div className="absolute -right-4 -top-4 h-2/3 w-auto text-9xl text-right font-extrabold uppercase text-primary/10">
+                  {job.label}
+                </div>
+                <h3 className="text-2xl font-bold mb-2">{job.title}</h3>
+                <p className="text-muted-foreground mb-4">{job.location}</p>
+                <ul className="space-y-2 mb-6">
+                  {job.requirements.map((req, index) => (
+                    <li key={index} className="flex items-center">
+                      <FaCheckCircle className="text-primary mr-2" />
+                      <span>{req}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button className="w-full">Apply Now</Button>
               </div>
-              <h3 className="text-2xl font-bold mb-2">
-                Senior React Developer
-              </h3>
-              <p className="text-muted-foreground mb-4">Islamabad, Pakistan</p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-center">
-                  <FaCheckCircle className="text-primary mr-2" />
-                  <span>5+ years of experience in front-end development</span>
-                </li>
-                <li className="flex items-center">
-                  <FaCheckCircle className="text-primary mr-2" />
-                  <span>Expert in React.js, JavaScript, TypeScript</span>
-                </li>
-                <li className="flex items-center">
-                  <FaCheckCircle className="text-primary mr-2" />
-                  <span>Experience with RESTful APIs and GraphQL</span>
-                </li>
-              </ul>
-              <Button className="w-full">Apply Now</Button>
-            </div>
-
-            {/* Job Opening 2 */}
-            <div className="p-8 border-l-4 border-primary rounded-r-lg bg-primary/5 hover:bg-primary/10 transition relative overflow-hidden">
-              <div className="absolute -right-4 -top-4 h-2/3 w-auto text-9xl text-right font-extrabold uppercase text-primary/10">
-                UI/UX
-              </div>
-              <h3 className="text-2xl font-bold mb-2">UI/UX Designer</h3>
-              <p className="text-muted-foreground mb-4">Remote</p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-center">
-                  <FaCheckCircle className="text-primary mr-2" />
-                  <span>3+ years of experience in UI/UX design</span>
-                </li>
-                <li className="flex items-center">
-                  <FaCheckCircle className="text-primary mr-2" />
-                  <span>Proficient in Figma, Sketch, and Adobe XD</span>
-                </li>
-                <li className="flex items-center">
-                  <FaCheckCircle className="text-primary mr-2" />
-                  <span>
-                    Ability to translate concepts into user flows and wireframes
-                  </span>
-                </li>
-              </ul>
-              <Button className="w-full">Apply Now</Button>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -96,6 +80,7 @@ export default function Careers() {
   );
 }
 
+// Define the WhyJoinUs component as it was originally
 import { FaChartLine, FaLightbulb, FaBalanceScale } from "react-icons/fa";
 
 function WhyJoinUs() {
