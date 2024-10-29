@@ -53,7 +53,13 @@ export default function Careers() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full">Apply Now</Button>
+                {/* <Button className="w-full">Apply Now</Button> */}
+                <p className="">
+                  To apply: send your Resume on
+                  <Button size='lg' className="" variant="link" asChild>
+                    <a href="mailto:mexemas7@gmail.com">mexemas7@gmail.com</a>
+                  </Button>
+                </p>
               </div>
             ))}
           </div>
