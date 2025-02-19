@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import { BackToTopButton } from ".";
+import { BackToTopButton, MrCard } from ".";
 import { LogoMHS } from "./Header";
 import { menu, servicesData } from "@/data";
 import { MoveRight } from "lucide-react";
@@ -112,40 +112,24 @@ export default function Footer() {
           <div className="mt-8">
             <SocialBar />
           </div>
-          {/* <div className="mt-6">
-            <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              {menu.social.map(({ name, path, icon: Icon }) => (
-                <Link
-                  key={name}
-                  to={path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-white transition-colors"
-                  title={name}
-                >
-                  <Icon size={24} />
-                </Link>
-              ))}
-            </div>
-          </div> */}
         </div>
       </div>
 
       {/* Footer Bottom */}
       <div className="bg-primary/20">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center p-4">
-          <p className="text-sm">
-            Developed by{" "}
+          <p className="text-sm mb-4 sm:mb-0">
+            Developed in{" "}
             <Link
               target="_blank"
               className="text-primary hover:underline"
-              to={"https://mhstv.vercel.app/"}
+              to={"https://mhstechventures.com/"}
             >
               MHS Tech Ventures
             </Link>{" "}
             | © 2024 Global Links Technologies. All rights reserved.
           </p>
+          <MrCard />
           <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
             {[
               { name: "Terms of Service", link: "/terms-of-services" },

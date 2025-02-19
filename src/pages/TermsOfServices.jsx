@@ -2,11 +2,19 @@ import { DetailsHeroSection, Heading } from "@/components";
 import { SectionContainer } from "@/components";
 import { Button } from "@/components/ui/button";
 import { termsData } from "@/data";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 export default function TermsOfService() {
   return (
     <>
+      <Helmet>
+        <title>Terms of Services - Global Links Technologies</title>
+        <meta
+          name="description"
+          content="Global Links Technologies provides cutting-edge technology solutions to businesses worldwide. From software development to consultancy, we help you achieve your digital transformation goals."
+        />
+      </Helmet>
       <DetailsHeroSection
         title="Terms of Service"
         description="Your rights and responsibilities at Global Links Technologies"

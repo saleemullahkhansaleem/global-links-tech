@@ -7,6 +7,7 @@ import Heading from "./Heading";
 import DetailsHeroSection from "./DetailsHeroSection";
 import ServiceCard from "./ServiceCard";
 import ProjectCard from "./ProjectCard";
+import MrCard from "./MrCard";
 
 // Landing page components
 
@@ -29,6 +30,7 @@ export {
   DetailsHeroSection,
   ServiceCard,
   ProjectCard,
+  MrCard,
 
   //Home page components
   SectionContainer,

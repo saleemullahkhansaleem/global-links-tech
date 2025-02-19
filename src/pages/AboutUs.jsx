@@ -5,12 +5,20 @@ import {
   SectionContainer,
 } from "@/components";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   return (
     <div className="bg-background text-foreground">
+          <Helmet>
+            <title>About - Global Links Technologies</title>
+            <meta
+              name="description"
+              content="Global Links Technologies provides cutting-edge technology solutions to businesses worldwide. From software development to consultancy, we help you achieve your digital transformation goals."
+            />
+          </Helmet>
       <DetailsHeroSection
         title="About Us"
         description="Innovating your business with cutting-edge technology solutions."

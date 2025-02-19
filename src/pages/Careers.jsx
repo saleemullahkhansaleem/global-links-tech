@@ -20,6 +20,13 @@ export default function Careers() {
 
   return (
     <div className="bg-background text-foreground">
+      <Helmet>
+        <title>Career - Global Links Technologies</title>
+        <meta
+          name="description"
+          content="Global Links Technologies provides cutting-edge technology solutions to businesses worldwide. From software development to consultancy, we help you achieve your digital transformation goals."
+        />
+      </Helmet>
       <DetailsHeroSection
         title="Careers"
         description="Join our team and help us shape the future of technology."
@@ -56,7 +63,7 @@ export default function Careers() {
                 {/* <Button className="w-full">Apply Now</Button> */}
                 <p className="">
                   To apply: send your Resume on
-                  <Button size='lg' className="" variant="link" asChild>
+                  <Button size="lg" className="" variant="link" asChild>
                     <a href="mailto:mexemas7@gmail.com">mexemas7@gmail.com</a>
                   </Button>
                 </p>
@@ -88,6 +95,7 @@ export default function Careers() {
 
 // Define the WhyJoinUs component as it was originally
 import { FaChartLine, FaLightbulb, FaBalanceScale } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 function WhyJoinUs() {
   return (

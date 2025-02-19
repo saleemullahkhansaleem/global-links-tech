@@ -2,11 +2,19 @@ import { DetailsHeroSection, Heading } from "@/components";
 import { SectionContainer } from "@/components";
 import { Button } from "@/components/ui/button";
 import { privacyPolicyData } from "@/data";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 export default function PrivacyPolicy() {
   return (
     <>
+      <Helmet>
+        <title>privacy policy - Global Links Technologies</title>
+        <meta
+          name="description"
+          content="Global Links Technologies provides cutting-edge technology solutions to businesses worldwide. From software development to consultancy, we help you achieve your digital transformation goals."
+        />
+      </Helmet>
       <DetailsHeroSection
         title="Privacy Policy"
         description="How we protect your privacy and data at Global Links Technologies"

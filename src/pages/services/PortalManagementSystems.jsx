@@ -1,5 +1,6 @@
 import { DetailsHeroSection, Heading, ServiceCard } from "@/components";
 import { portalManagementSystemsData } from "@/data";
+import { Helmet } from "react-helmet-async";
 
 export default function PortalManagementSystems() {
   const { title, description, features, process, technologies } =
@@ -7,6 +8,10 @@ export default function PortalManagementSystems() {
 
   return (
     <>
+      <Helmet>
+        <title>{title} - Global Links Technologies</title>
+        <meta name="description" content={description} />
+      </Helmet>
       {/* Hero Section */}
       <DetailsHeroSection title={title} description={description} />
 
