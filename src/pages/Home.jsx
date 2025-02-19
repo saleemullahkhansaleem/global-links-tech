@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import {
   AboutSection,
   HeroSection,
@@ -27,8 +24,8 @@ export default function Home() {
       <AboutSection />
       <WhyChooseUs />
       <PortfolioSection />
-      {/* <TeamSection />
-      <Testimonial /> */}
+      <TeamSection />
+      {/* <Testimonial /> */}
     </>
   );
 }

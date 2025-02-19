@@ -1,27 +1,19 @@
 export const teamMembers = [
   {
-    name: "Muhammad Hanif Shah",
-    position: "Chief Executive Officer",
-    image: "/images/team/mhs-profile.png",
-    linkedin: "https://linkedin.com/in/johndoe",
-    twitter: "https://twitter.com/johndoe",
-    github: "https://github.com/johndoe",
-  },
-  {
     name: "Ehtesham Ahmed",
     position: "Lead Project Manager",
     image: "/images/team/ehtesham-profile.png",
-    linkedin: "https://linkedin.com/in/janesmith",
-    twitter: "https://twitter.com/janesmith",
-    github: "https://github.com/janesmith",
+    linkedin: "https://www.linkedin.com/in/syed-zaide-225985ba/",
+    twitter: "https://twitter.com/ehtesham_ahmed",
+    // github: "https://github.com/",
   },
   {
     name: "Mubashar Iftekhar",
     position: "Backend Developer",
     image: "/images/team/mubashar-profile.png",
-    linkedin: "https://linkedin.com/in/mikejohnson",
-    twitter: "https://twitter.com/mikejohnson",
-    github: "https://github.com/mikejohnson",
+    linkedin: "https://www.linkedin.com/in/mubashar-iftikhar-9a36ab264/",
+    // twitter: "https://twitter.com/",
+    github: "https://github.com/mubashariftikhar",
   },
   {
     name: "Saleemullah Khan",

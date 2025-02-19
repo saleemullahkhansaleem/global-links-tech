@@ -13,7 +13,7 @@ export default function TeamSection() {
       titleColor="Our Team"
       description="Our talented team is committed to delivering innovative solutions
             and ensuring your project's success."
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
     >
       {teamMembers.map((member, index) => (
         <TeamBox member={member} index={index} key={index} />
@@ -39,7 +39,7 @@ function TeamBox({ member, index }) {
           alt={member.name}
           className="w-full aspect-[3/4] object-cover object-center"
         />
-        <div className="absolute inset-0 max-h-0 group-hover:max-h-[600px] bg-gradient-to-b from-primary/80 to-primary/20 transition-all duration-700 ease-in-out overflow-hidden flex items-center justify-center">
+        <div className="absolute inset-0 max-h-0 group-hover:max-h-[600px] bg-gradient-to-b from-primary via-primary/30 to-primary/20 transition-all duration-700 ease-in-out overflow-hidden flex items-center justify-center">
           <div className="flex space-x-4 z-10 text-white">
             {member.linkedin && (
               <Link
