@@ -16,6 +16,20 @@ export default function Careers() {
       ],
       label: "Accounting",
     },
+    {
+      id: 4,
+      title: "Full Stack Developer",
+      location: "Islamabad, Pakistan",
+      requirements: [
+        "Expertise in Laravel, PHP, and CodeIgniter",
+        "Proficiency in PostgreSQL and MySQL",
+        "Strong knowledge of HTML, CSS, and JavaScript",
+        "Experience with Tailwind CSS and ShadCN/UI",
+        "Proficiency in React and Next.js",
+        "Ability to develop and maintain scalable applications",
+      ],
+      label: "Software Development",
+    },
   ];
 
   return (

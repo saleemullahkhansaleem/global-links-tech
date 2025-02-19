@@ -70,6 +70,18 @@ export default function ContactUs() {
 
       <ContactInfo />
 
+      {/* Call to Action */}
+      <section className="py-12">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">
+            Let’s <Heading>Start a Project Together!</Heading>
+          </h2>
+          <p className="mb-6 text-lg">
+            Reach out to us for any inquiries or to discuss your project ideas.
+          </p>
+        </div>
+      </section>
+
       {/* Contact Form and Map Section */}
       <section className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Contact Form */}
@@ -159,18 +171,6 @@ export default function ContactUs() {
             loading="lazy"
             title="Google Map"
           ></iframe>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-12">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">
-            Let’s <Heading>Start a Project Together!</Heading>
-          </h2>
-          <p className="mb-6 text-lg">
-            Reach out to us for any inquiries or to discuss your project ideas.
-          </p>
         </div>
       </section>
     </div>

@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { SiFiverr } from "react-icons/si";
 
 export default function MrCard({
-  name = "Mr Saleem",
+  name = "Mr. Saleem",
   title = "Full Stack Developer",
   photoUrl = "/images/mr.webp",
   portfolioUrl = "http://mrsaleem.vercel.app",
