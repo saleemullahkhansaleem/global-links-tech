@@ -27,13 +27,13 @@ export const menu = {
     { name: "E-commerce Solutions", path: "/services/e-commerce-solutions" },
   ],
   social: [
-    { name: "Facebook", path: "https://facebook.com", icon: FaFacebookF },
+    // { name: "Facebook", path: "https://facebook.com", icon: FaFacebookF },
     {
       name: "LinkedIn",
       path: "https://www.linkedin.com/company/global-links-tech/",
       icon: FaLinkedinIn,
     },
-    { name: "YouTube", path: "https://youtube.com", icon: FaYoutube },
-    { name: "Instagram", path: "https://instagram.com", icon: FaInstagram },
+    // { name: "YouTube", path: "https://youtube.com", icon: FaYoutube },
+    // { name: "Instagram", path: "https://instagram.com", icon: FaInstagram },
   ],
 };
