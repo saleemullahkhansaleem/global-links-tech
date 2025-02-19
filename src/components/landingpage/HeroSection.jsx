@@ -49,7 +49,7 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 mt-8"
           >
             <Button size="lg" asChild>
-              <Link to="/get-started">Get in Touch</Link>
+              <Link to="/contact-us">Get in Touch</Link>
             </Button>
           </motion.div>
         </div>
