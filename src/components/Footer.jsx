@@ -9,8 +9,8 @@ import { SocialBar } from "./landingpage/HeroSection";
 const contactInfo = [
   {
     icon: FaEnvelope,
-    text: "globallinkstechnologies2@gmail.com",
-    path: "mailto:globallinkstechnologies2@gmail.com",
+    text: "info@globallinkstechnologies.com",
+    path: "mailto:info@globallinkstechnologies.com",
   },
   { icon: FaPhone, text: "+9251 8739 888", path: "tel:+92518739888" },
   {
