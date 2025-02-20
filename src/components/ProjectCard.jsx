@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { CgMediaLive } from "react-icons/cg";
 import { Button } from "./ui/button";
-import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export default function ProjectCard({
   project = {
@@ -40,20 +40,20 @@ export default function ProjectCard({
           className="w-full aspect-[4/2] object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute inset-0 opacity-0 transition-all duration-300 bg-primary/50 group-hover:opacity-100 flex items-center justify-center gap-4">
-          <Link
+          {/* <Link
             to={project.codeUrl}
             title="Code"
             className="flex items-center justify-center gap-2 bg-black/40 p-3 hover:bg-black/50 text-white  hover:text-primary"
           >
             <FaGithub size={28} />
-          </Link>
+          </Link> */}
 
           <Link
             to={project.liveUrl}
             title="live"
             className="flex items-center justify-center gap-2 bg-black/40 p-3 hover:bg-black/50 text-white  hover:text-primary"
           >
-            <CgMediaLive size={28} />
+            <FaExternalLinkAlt size={28} />
           </Link>
         </div>
       </div>

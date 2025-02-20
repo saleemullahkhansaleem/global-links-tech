@@ -16,11 +16,11 @@ export const projectsData = [
     codeUrl: "",
   },
   {
-    title: "Global Links Technologies",
+    title: "CAPUT International (Pvt.) Ltd.",
     description:
-      "A modern IT services website for an innovative startup, offering information on cutting-edge software solutions, including web and mobile app development, software consultancy, and portal management systems.",
+      "We are a leading company providing innovative solutions across various industries. Our commitment to excellence and customer satisfaction sets us apart.",
     image: "/images/projects/3.webp",
-    liveUrl: "https://globallinkstechnologies.com/",
+    liveUrl: "https://caputinternational.com.pk/",
     codeUrl: "",
   },
 ];
